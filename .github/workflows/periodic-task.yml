@@ -1,0 +1,14 @@
+name: Periodic Task
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every 1 minute
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello, World!
+        run: echo "Hello, World!"
+
